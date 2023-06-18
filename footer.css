@@ -1,0 +1,72 @@
+#Contact {
+  font-family: sans-serif;
+}
+.contact-container {
+  width: 100%;
+  min-height: 70vh;
+  background-image: url(images/end.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+.image-color {
+  width: 99%;
+  min-height: 70vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+}
+.contact-body {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  padding-top: 20px;
+}
+.contact-body .title {
+  min-height: 20vh;
+  font-size: 24px;
+  display: flex;
+  transform: translateX(-10px);
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+}
+.address {
+  font-family: sans-serif;
+  font-size: 400;
+}
+.address h2 {
+  font-size: 22px;
+  padding-bottom: 10px;
+  color: #ccc;
+}
+.address h3 {
+  font-size: 16px;
+  padding-bottom: 10px;
+  letter-spacing: 0.1rem;
+}
+.address h3:hover {
+  color: #ccc;
+}
+.social {
+  min-height: 10vh;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+}
+.social a {
+  text-decoration: none;
+  padding: 10px;
+  gap: 20px;
+  color: #ddd;
+  margin: 10px;
+}
+.social a:hover {
+  color: #fff;
+}
+.copyright {
+  display: flex;
+  justify-content: center;
+  font-family: monospace;
+  font-size: 14px;
+  margin-top: 40px;
+}

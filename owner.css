@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.landowner {
+  min-height: 10vh;
+}
+.uploadshow {
+  min-height: 15vh;
+  padding-top: 20px;
+  width: 100%;
+  background-color: #fff;
+  color: #92e3a9;
+  text-align: center;
+  font-family: serif;
+}
+.uploadshow > h1 {
+  font-size: 24px;
+}
+.landowner-container {
+  min-height: 10vh;
+  width: 100%;
+  display: flex;
+  background-image: url(images/homeowner.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position-y: 40%;
+}
+.landowner-container > h2 {
+  padding-top: 12rem;
+  padding-left: 5rem;
+  padding-bottom: 2rem;
+  font-size: 42px;
+  font-family: monospace;
+  color: #fff;
+}
+.description-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 120px 40px;
+}
+.container-img {
+  display: flex;
+  justify-content: center;
+}
+.container-img > img {
+  width: 80%;
+}
+.container-body > h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  font-family: ubuntu;
+  font-weight: 600;
+}
+.container-body > p {
+  font-size: 16px;
+  font-family: ubuntu, sans-serif;
+  line-height: 1.6rem;
+  margin-right: 30px;
+}
+.contact-form {
+  margin-left: 50px;
+}
+.contact-form > h2 {
+  margin-bottom: 50px;
+  font-size: 32px;
+  font-family: ubuntu;
+}
+.contact-form-container > form {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url(images/Apartment\ rent-bro.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  margin-right: 40px;
+  background-size: 50ch;
+  gap: 15px;
+}
+.contact-form-container > form > h3 {
+  margin-bottom: 40px;
+  margin-top: 40px;
+  color: #4b4b4b;
+}
+.contact-form-container > form > input,
+.contact-form-container > form > select {
+  padding: 10px;
+  font-size: 16px;
+  border: 0px;
+  border-bottom: 1px solid #4b4b4b;
+  width: 50%;
+  background-color: transparent;
+  color: #838383cc;
+}
+.contact-form-container > form > button {
+  color: #4b4b4b;
+  width: 40%;
+  padding: 15px 10px;
+  margin-top: 40px;
+  margin-bottom: 100px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.contact-form-container > form > button:hover {
+  background-color: #ba68c8;
+  color: #fff;
+  cursor: pointer;
+}
+
+#Contact {
+  font-family: sans-serif;
+}
+.contact-container {
+  width: 100%;
+  min-height: 80vh;
+  background-image: url(images/end.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+.image-color {
+  width: 100%;
+  min-height: 80vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+}
+.contact-body {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+  padding-top: 50px;
+}
+.contact-body .title {
+  min-height: 40vh;
+  font-size: 42px;
+  display: flex;
+  transform: translateX(-20px);
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+}
+.address {
+  font-family: sans-serif;
+  font-size: 400;
+}
+.address h2 {
+  font-size: 24px;
+  padding-bottom: 20px;
+  color: #ccc;
+}
+.address h3 {
+  font-size: 20px;
+  padding-bottom: 20px;
+  letter-spacing: 0.1rem;
+}
+.address h3:hover {
+  color: #ccc;
+}
+.social {
+  min-height: 30vh;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+}
+.social a {
+  text-decoration: none;
+  padding: 10px;
+  gap: 40px;
+  color: #ddd;
+  margin: 10px;
+}
+.social a:hover {
+  color: #fff;
+}
+.copyright {
+  display: flex;
+  justify-content: center;
+  font-family: monospace;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 780px) {
+  .container-img > img {
+    max-height: 100vh;
+    padding-top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .contact-form-container > form > input,
+  .contact-form-container > form > select {
+    width: 70%;
+  }
+  .contact-form-container > form > button {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 560px) {
+  .description-container {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 50px;
+  }
+  .container-img > img {
+    height: fit-content;
+    padding: 0px;
+    display: block;
+    border: outset;
+  }
+  .container-body > h2 {
+    margin-top: 50px;
+  }
+  .landowner-container > h2 {
+    padding-top: 5rem;
+    padding-left: 5rem;
+    margin: 0px;
+  }
+  .contact-form-container > form > button {
+    padding: 10px 10px;
+  }
+  .contact-form-container > form {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(images/Apartment\ rent-bro.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin-right: 40px;
+    background-size: 30ch;
+    gap: 15px;
+  }
+}

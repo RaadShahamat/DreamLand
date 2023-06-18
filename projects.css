@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.form {
+  margin-top: 40px;
+}
+.box {
+  width: 100%;
+  min-height: 20vh;
+  display: flex;
+  justify-content: space-around;
+  color: black;
+}
+.box-content {
+  min-height: 20vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.box-content select {
+  padding: 10px 40px;
+  font-size: 20px;
+  width: auto;
+  margin: 10px;
+  border: 0;
+  border-bottom: 1px solid #4b4b4b;
+  background: transparent;
+  color: black;
+  cursor: pointer;
+}
+.box-content select:active {
+  border: 0;
+  background: transparent;
+}
+.box-content option {
+  color: #ddd;
+  background-color: #4b4b4b;
+  cursor: pointer;
+}
+.box-content .btn {
+  padding: 15px 125px;
+  background-color: transparent;
+  border: 1px solid #4b4b4b;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: black;
+  transition: transform 0.5s ease-in-out;
+}
+.box-content .btn:hover {
+  background-color: #4b4b4b;
+  color: #fff;
+  transform: scale(1.05, 1.05);
+}
+.container {
+  display: flex;
+  /* justify-content: center; */
+}
+
+.container-box {
+  margin: 50px;
+  border: 0.5px solid #ccc;
+  border-radius: 5px;
+  padding: 50px;
+  box-shadow: 5px 5px 5px #919191;
+}
+.container > img {
+  max-height: 25rem;
+  width: 40ch;
+  border-radius: 5px;
+  margin-right: 100px;
+}
+.container > p {
+  font-size: 1rem;
+  font-family: sans-serif;
+  /* letter-spacing: 0.1rem; */
+  padding: 30px;
+  color: #4b4b4b;
+  filter: brightness(70%);
+}
+.container > p > button {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #4b4b4b;
+  margin-top: 30px;
+  background-color: transparent;
+}
+.container > p > button:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #4b4b4b;
+}
+.container-img > img {
+  max-height: 80vh;
+  display: block;
+  width: 80%;
+  margin: 40px;
+}
+.container-img > h3 {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  font-size: 24px;
+}
+.container-img > table {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+td {
+  padding: 3px 50px;
+  font-size: 20px;
+}
+.hidden {
+  display: none;
+}
+.selection > h1 {
+  font-family: monospace;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .container > img {
+    max-height: 25rem;
+    width: 25ch;
+    border-radius: 5px;
+    margin-right: 100px;
+  }
+}
